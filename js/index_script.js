@@ -1,15 +1,12 @@
 // Trigger function get Data on each keyup event in input
-const heroHTML=document.getElementById('hero-name');
-heroHTML.onkeyup=getData;
-const search=document.getElementById('btn-search');
-const favourite=document.getElementById('btn-favourite');
+document.getElementById('hero-name').onkeyup=getData;
 
 //hero id
 let heroId=0;
 // function to get data
-function getData(e){
+function getData(){
 
-    var hero = e.target.value;
+    var val = document.getElementById('hero-name').value;
     var list = document.getElementById('auto-complete');
     clearList();
   
@@ -43,13 +40,16 @@ function getData(e){
         }
         
     }
-    // xmlRequest    
-    xhrRequest.open('GET','https://akabab.github.io/superhero-api/api/all.json');
-    xhrRequest.send();
-}
+
+         // xmlRequest
+        xhrRequest.open('GET','https://akabab.github.io/superhero-api/api/all.json'+val);
+        xhrRequest.send();
+        
+    }
+
 // handling enter key event
 
-hero.addEventListener('keydown',function(event){
+document.getElementById('hero-name').addEventListener('keydown',function(event){
 
     if(event.key.code==13){
 
@@ -71,7 +71,7 @@ function clearList(){
     // heroId=null;
 }
 // on clicking search button
-search.addEventListener('click',showHero);
+document.getElementById('btn-search').addEventListener('click',showHero);
 function showHero(){
     var name = document.getElementById('hero-name').value;
     if(name==""){
@@ -85,7 +85,3 @@ function showHero(){
     }
     // console.log(hero);
 }
-// on clicking my favourite button
-favourite.addEventListener('click',function(){
-    window.location.assign('favourite.html');
-})

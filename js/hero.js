@@ -15,7 +15,7 @@ xhrRequest.onload = function (){
 }
 
 //xhrRequest
-xhrRequest.open('get','https://www.superheroapi.com/api.php/3328323083897178/'+heroId);
+xhrRequest.open('get','https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/id/1.json'+heroId);
 xhrRequest.send();
 
 //function to fill all the super hero data//
