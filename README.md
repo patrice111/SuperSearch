@@ -57,10 +57,6 @@ Once the site has populated in your browser, you'll be able to use the click on 
 ## Contributing
 If you would like to contribute to this project please reach out to me on Github or email.
 
-
-## Challenges
-I had a difficult time setting up and running my APIs
-
 ## Questions
 If you have questions about this repository? Please contact me at [patrice_kelly22@yahoo.com](mailto:patrice_kelly22@yahoo.com). View more of my work in GitHub at [patrice111](https://github.com/patrice111).
 
