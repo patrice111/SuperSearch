@@ -2,6 +2,7 @@
 
 <img src='Screenshot1.jpg' alt='pic of search engine'>
 <img src='Screenshot2.jpg' alt='pic of superhero'>
+*background images from https://unsplash.com/
 
 ## Description
 You will be building a single-page frontend application that populates superhero's information using the following APIs.
