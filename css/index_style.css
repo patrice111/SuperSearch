@@ -49,6 +49,13 @@ button{
     overflow-y: auto;
     
 }
+#hero-name{
+  padding:1rem;
+  margin:auto;
+  border:none;
+  border-radius: 2px
+}
+
 /* media query for responsive design */
 @media screen and (max-width: 600px) {
     
@@ -67,3 +74,4 @@ button{
         margin-top: 1%;
     }
   }
+
